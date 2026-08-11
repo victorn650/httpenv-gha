@@ -16,7 +16,7 @@ on:
       - 'README.md'
       - '.github/linters/**'
   schedule:
-    # re-run montly to keep image fresh with upstream base images
+    # re-run monthly to keep image fresh with upstream base images
     - cron: '0 12 15 * *'
   workflow_dispatch:
     # run manually from Actions tab
@@ -27,7 +27,7 @@ jobs:
 
     name: Call Docker Build
 
-    uses: bretfisher/docker-build-workflow/.github/workflows/reusable-docker-build.yaml@main
+    uses: victorn650/docker-build-workflow-gha/.github/workflows/reusable-docker-build.yaml@main
 
     permissions:
       contents: read
@@ -68,7 +68,7 @@ jobs:
       
       ### path to where docker should copy files into image
       ### defaults to root of repository (.)
-      # context: .
+      context: .
       
       ### Dockerfile alternate name. Default is Dockerfile (relative to context path)
       # file: Containerfile
