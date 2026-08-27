@@ -52,10 +52,10 @@ jobs:
 
       ### A list of the account/repo names for docker build. List should match what's enabled above
       ### defaults to:
-      # image-names: |
-      #   ${{ github.repository }}
-      #   ghcr.io/${{ github.repository }}
-
+       image-names: |
+         ${{ github.repository }}
+         ghcr.io/${{ github.repository }}
+         lilmoby14/httpenv-gha
       ### set rules for tagging images, based on special action syntax:
       ### https://github.com/docker/metadata-action#tags-input
       ### defaults to:
