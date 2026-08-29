@@ -54,7 +54,7 @@ jobs:
       ### defaults to:
       image-names: |
         ghcr.io/${{ github.repository }}
-      #  lilmoby14/httpenv-gha
+        lilmoby14/httpenv-gha
       ### set rules for tagging images, based on special action syntax:
       ### https://github.com/docker/metadata-action#tags-input
       ### defaults to:
